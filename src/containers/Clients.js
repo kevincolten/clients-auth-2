@@ -7,7 +7,7 @@ export default class Clients extends Component {
 
   componentDidMount = async () => {
     try {
-      const response = await fetch('/api/clients', {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/clients`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }

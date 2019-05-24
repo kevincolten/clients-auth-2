@@ -18,7 +18,7 @@ export default class App extends React.Component {
 
   render = () => {
     return (
-      <Router>
+      <Router basename={'/clients-auth-2'}>
         <div>
           <nav>
             <ul>

@@ -9,7 +9,7 @@ export default class Login extends Component {
 
   onSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch('/api/login', {
+    const response = await fetch(`${process.env.REACT_APP_API}/api/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
