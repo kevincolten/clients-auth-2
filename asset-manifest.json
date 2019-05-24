@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/clients-auth-2/static/css/main.34de6062.chunk.css",
-    "main.js": "/clients-auth-2/static/js/main.b4a6b608.chunk.js",
-    "main.js.map": "/clients-auth-2/static/js/main.b4a6b608.chunk.js.map",
+    "main.js": "/clients-auth-2/static/js/main.c9a4f14f.chunk.js",
+    "main.js.map": "/clients-auth-2/static/js/main.c9a4f14f.chunk.js.map",
     "runtime~main.js": "/clients-auth-2/static/js/runtime~main.5c298a49.js",
     "runtime~main.js.map": "/clients-auth-2/static/js/runtime~main.5c298a49.js.map",
     "static/js/2.e3789385.chunk.js": "/clients-auth-2/static/js/2.e3789385.chunk.js",
     "static/js/2.e3789385.chunk.js.map": "/clients-auth-2/static/js/2.e3789385.chunk.js.map",
     "index.html": "/clients-auth-2/index.html",
-    "precache-manifest.404f3bfcdba1ccbc5580a5a413d2b01d.js": "/clients-auth-2/precache-manifest.404f3bfcdba1ccbc5580a5a413d2b01d.js",
+    "precache-manifest.a77eb1cacc24fdfd7a75de6976069515.js": "/clients-auth-2/precache-manifest.a77eb1cacc24fdfd7a75de6976069515.js",
     "service-worker.js": "/clients-auth-2/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/clients-auth-2/static/css/main.34de6062.chunk.css.map"
   }
