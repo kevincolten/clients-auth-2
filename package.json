@@ -12,7 +12,7 @@
   "scripts": {
     "start": "REACT_APP_API='' react-scripts start",
     "build": "react-scripts build",
-    "deploy": "REACT_APP_API=https://aca-spring-app-auth.herokuapp.com npm run build && gh-pages -d build",
+    "deploy": "REACT_APP_API=https://aca-spring-app-auth.herokuapp.com npm run build && cp build/index.html build/404.html && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
