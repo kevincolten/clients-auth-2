@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Login from './containers/Login';
+import Clients from './containers/Clients';
+import PrivateRoute from './components/PrivateRoute';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+
+  state = {
+    loggedIn: !!localStorage.getItem('token')
+  }
+
+  onClick = (e) => {
+    e.preventDefault();
+    localStorage.removeItem('token');
+    this.setState({ loggedIn: false });
+  }
+
+  render = () => {
+    return (
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/login">login</Link>
+              </li>
+              <li>
+                <Link to="/clients">Clients</Link>
+              </li>
+              {/* <li>
+                <Link to="/pets">pets</Link>
+              </li> */}
+              <li>
+                <a href="#logout" onClick={this.onClick}>Logout</a>
+              </li>
+            </ul>
+          </nav>
+
+          <Route path="/" exact component={Login} />
+          <Route path="/login" component={Login} />
+          <PrivateRoute path="/clients" component={Clients} />
+          {/* <Route path="/pets" component={Pets} /> */}
+        </div>
+      </Router>
+    );
+  }
 }
-
-export default App;
